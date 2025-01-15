@@ -12,7 +12,7 @@ CREATE TABLE `customer` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 INSERT INTO `customer` VALUES ('1', 'Unknown', 'Unknown', 'Unknown', 'unknown@example.com', 'Unknown', 'System.Byte[]', 'Not active');
-INSERT INTO `customer` VALUES ('2', 'shahed', 'Null', '01318523521', 'Null', 'Null', 'System.Byte[]', '8547442');
+INSERT INTO `customer` VALUES ('2', 'shahed', 'Null', '01318523521', 'Null', 'Null', 'System.Byte[]', '8365672');
 INSERT INTO `customer` VALUES ('3', 'shahed', 'Null', '01318523521', 'Null', 'Null', 'System.Byte[]', 'Not active');
 
 -- Table: ds_order by SHAHED TECH
@@ -347,7 +347,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-12 06:33:28 PM', '');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-12 08:29:30 PM', '');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-12 08:33:06 PM', '');
@@ -425,6 +425,7 @@ INSERT INTO `user_activity` VALUES ('74', 'admin', '2025-01-15 09:28:24 PM', 'ZE
 INSERT INTO `user_activity` VALUES ('75', 'admin', '2025-01-15 09:43:47 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('76', 'admin', '2025-01-15 09:46:19 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('77', 'admin', '2025-01-15 09:48:46 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('78', 'admin', '2025-01-15 09:52:04 PM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
