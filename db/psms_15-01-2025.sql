@@ -342,7 +342,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-12 06:33:28 PM', '');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-12 08:29:30 PM', '');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-12 08:33:06 PM', '');
@@ -410,6 +410,7 @@ INSERT INTO `user_activity` VALUES ('64', 'admin', '2025-01-15 06:07:29 PM', '')
 INSERT INTO `user_activity` VALUES ('65', 'admin', '2025-01-15 06:09:29 PM', '');
 INSERT INTO `user_activity` VALUES ('66', 'admin', '2025-01-15 06:13:49 PM', '');
 INSERT INTO `user_activity` VALUES ('67', 'admin', '2025-01-15 06:14:51 PM', '');
+INSERT INTO `user_activity` VALUES ('68', 'admin', '2025-01-15 06:29:21 PM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
