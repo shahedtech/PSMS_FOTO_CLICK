@@ -10,11 +10,8 @@ CREATE TABLE `customer` (
   `Custome_image` longblob NOT NULL,
   `Pass` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 INSERT INTO `customer` VALUES ('1', 'Unknown', 'Unknown', 'Unknown', 'unknown@example.com', 'Unknown', 'System.Byte[]', 'Not active');
-INSERT INTO `customer` VALUES ('2', 'Shahed', 'Null', '01626540168', 'Null', 'Null', 'System.Byte[]', 'Not active');
-INSERT INTO `customer` VALUES ('3', 'Tamim', 'Null', '01318523521', 'Null', 'Null', 'System.Byte[]', 'Not active');
-INSERT INTO `customer` VALUES ('4', 'setu', 'Null', 'null', 'Null', 'Null', 'System.Byte[]', 'Not active');
 
 -- Table: ds_order by SHAHED TECH
 DROP TABLE IF EXISTS `ds_order`;
@@ -33,12 +30,6 @@ CREATE TABLE `ds_order` (
   `Now` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 INSERT INTO `ds_order` VALUES ('0001', 'Foto click', 'Unknown', 'Unknown', 'Unknown', '0', 'Demo', '0', '0', '0', '2025-01-01', 'default');
-INSERT INTO `ds_order` VALUES ('2', 'admin', 'Shahed', '01626540168', 'Foto click pass', '2', 'DS PP 3 PIS', '200.000', '130', '', '2025-01-17', 'pending');
-INSERT INTO `ds_order` VALUES ('3', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '100', '', '2025-01-17', 'pending');
-INSERT INTO `ds_order` VALUES ('4', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '100', '', '2025-01-17', 'pending');
-INSERT INTO `ds_order` VALUES ('5', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '100', '', '2025-01-17', 'pending');
-INSERT INTO `ds_order` VALUES ('6', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '90', '', '2025-01-17', 'pending');
-INSERT INTO `ds_order` VALUES ('7', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '100', '', '2025-01-17', 'pending');
 
 -- Table: expense by SHAHED TECH
 DROP TABLE IF EXISTS `expense`;
@@ -83,7 +74,7 @@ CREATE TABLE `item` (
   `Barcode_image` longblob NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=latin1;
-INSERT INTO `item` VALUES ('1', 'DS PP 3 PIS', '100', '0', '202501', '90', '000000', 'System.Byte[]');
+INSERT INTO `item` VALUES ('1', 'DS PP', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('2', 'DS ST', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('3', 'DS B2', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('4', 'DS A5', '0', '0', '202501', '0', '000000', 'System.Byte[]');
@@ -277,14 +268,8 @@ CREATE TABLE `sales` (
   `Profit` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 INSERT INTO `sales` VALUES ('1', 'Foto Click', 'Unknown', 'Unknown', 'Unknown', '0', '0', '0', '2025-01-01');
-INSERT INTO `sales` VALUES ('2', 'admin', 'Shahed', '01626540168', 'Foto click pass', '130.00', '70', '180.00', '2025-01-17');
-INSERT INTO `sales` VALUES ('3', 'admin', 'Tamim', '01318523521', 'Foto click pass', '90.00', '10', '90.00', '2025-01-17');
-INSERT INTO `sales` VALUES ('4', 'admin', 'Tamim', '01318523521', 'Foto click pass', '90.00', '10', '90.00', '2025-01-17');
-INSERT INTO `sales` VALUES ('5', 'admin', 'Tamim', '01318523521', 'Foto click pass', '30.00', '70', '90.00', '2025-01-17');
-INSERT INTO `sales` VALUES ('6', 'admin', 'Tamim', '01318523521', 'Foto click pass', '90.00', '10', '90.00', '2025-01-17');
-INSERT INTO `sales` VALUES ('7', 'admin', 'Tamim', '01318523521', 'Foto click pass', '90.00', '10%', '90.00', '2025-01-17');
 
 -- Table: sales_profit by SHAHED TECH
 DROP TABLE IF EXISTS `sales_profit`;
@@ -297,13 +282,7 @@ CREATE TABLE `sales_profit` (
   `change` varchar(255) NOT NULL,
   `date` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
-INSERT INTO `sales_profit` VALUES ('1', 'Shahed', '200.00', '130', '', '0.00', '2025-01-17');
-INSERT INTO `sales_profit` VALUES ('2', 'Tamim', '100.00', '100', '', '10.00', '2025-01-17');
-INSERT INTO `sales_profit` VALUES ('3', 'Tamim', '100.00', '100', '', '10.00', '2025-01-17');
-INSERT INTO `sales_profit` VALUES ('4', 'Tamim', '100.00', '100', '', '70.00', '2025-01-17');
-INSERT INTO `sales_profit` VALUES ('5', 'Tamim', '100.00', '90', '', '0.00', '2025-01-17');
-INSERT INTO `sales_profit` VALUES ('6', 'Tamim', '100.00', '100', '', '10.00', '2025-01-17');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- Table: salesadv by SHAHED TECH
 DROP TABLE IF EXISTS `salesadv`;
@@ -315,14 +294,6 @@ CREATE TABLE `salesadv` (
   `Qty` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-INSERT INTO `salesadv` VALUES ('Shahed', '01626540168', 'DS PP', '0', '2', '2025-01-17');
-INSERT INTO `salesadv` VALUES ('Shahed', '01626540168', 'DS PP 3 PIS', '260', '2', '2025-01-17');
-INSERT INTO `salesadv` VALUES ('Shahed', '01626540168', 'DS PP 3 PIS', '200', '2', '2025-01-17');
-INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
-INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
-INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
-INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
-INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
 
 -- Table: shared_files by SHAHED TECH
 DROP TABLE IF EXISTS `shared_files`;
@@ -353,9 +324,7 @@ CREATE TABLE `supplier` (
   `Mobile` varchar(255) NOT NULL,
   `Address` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
-INSERT INTO `supplier` VALUES ('1', 'Bashundhara Paper Mills', ' +88 02 55037257', 'Tower# 1, Plot# 844, Road# 12, Block# I, Bashundhara R/A, Dhaka-1229');
-INSERT INTO `supplier` VALUES ('2', 'Fresh Paper Mills', '+880-9666777055', ' Fresh Villa House # 15, Road # 34, Gulshan-1. Dhaka-1212, Bangladesh');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Table: unit by SHAHED TECH
 DROP TABLE IF EXISTS `unit`;
@@ -382,25 +351,8 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
-INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-16 02:23:44 PM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 10:28:04 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-17 10:34:12 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('4', 'admin', '2025-01-17 10:36:05 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('5', 'admin', '2025-01-17 10:39:14 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('6', 'admin', '2025-01-17 10:59:19 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('7', 'admin', '2025-01-17 11:02:51 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('8', 'admin', '2025-01-17 11:05:47 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('9', 'admin', '2025-01-17 11:21:39 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('10', 'admin', '2025-01-17 11:37:32 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('11', 'admin', '2025-01-17 11:39:10 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('12', 'admin', '2025-01-17 11:42:50 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('13', 'admin', '2025-01-17 11:50:19 AM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('14', 'admin', '2025-01-17 12:08:14 PM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('15', 'admin', '2025-01-17 12:19:04 PM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('16', 'admin', '2025-01-17 12:21:08 PM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('17', 'admin', '2025-01-17 02:47:57 PM', 'ZERO');
-INSERT INTO `user_activity` VALUES ('18', 'admin', '2025-01-17 04:35:35 PM', 'ZERO');
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-17 05:07:24 PM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
