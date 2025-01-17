@@ -191,7 +191,61 @@ CREATE TABLE `item_purchase` (
   `item` varchar(255) NOT NULL,
   `price` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4;
+INSERT INTO `item_purchase` VALUES ('1', 'Restore Old', '0');
+INSERT INTO `item_purchase` VALUES ('2', 'Frame', '0');
+INSERT INTO `item_purchase` VALUES ('3', 'Payoch Lamating', '0');
+INSERT INTO `item_purchase` VALUES ('4', 'Album', '0');
+INSERT INTO `item_purchase` VALUES ('5', 'Work Online', '0');
+INSERT INTO `item_purchase` VALUES ('6', 'Ticket', '0');
+INSERT INTO `item_purchase` VALUES ('7', 'Visa', '0');
+INSERT INTO `item_purchase` VALUES ('8', 'Copy Soft', '0');
+INSERT INTO `item_purchase` VALUES ('9', 'Album Standard Photo', '0');
+INSERT INTO `item_purchase` VALUES ('10', 'Album Leather Photo', '0');
+INSERT INTO `item_purchase` VALUES ('11', 'Album Wedding Photo', '0');
+INSERT INTO `item_purchase` VALUES ('12', 'Album Family Photo', '0');
+INSERT INTO `item_purchase` VALUES ('13', 'Album Slip-in Photo', '0');
+INSERT INTO `item_purchase` VALUES ('14', 'Album Magnetic Photo', '0');
+INSERT INTO `item_purchase` VALUES ('15', 'Book Photo', '0');
+INSERT INTO `item_purchase` VALUES ('16', 'Album Customizable Photo', '0');
+INSERT INTO `item_purchase` VALUES ('17', 'Album Wedding Canvas', '0');
+INSERT INTO `item_purchase` VALUES ('18', 'Album Mini Photo', '0');
+INSERT INTO `item_purchase` VALUES ('19', 'Album Art Photo', '0');
+INSERT INTO `item_purchase` VALUES ('20', 'Album Scrapbook Style Photo', '0');
+INSERT INTO `item_purchase` VALUES ('21', 'Book Digital Print Photo', '0');
+INSERT INTO `item_purchase` VALUES ('22', 'Album Folio', '0');
+INSERT INTO `item_purchase` VALUES ('23', 'Frame Wooden 3R', '0');
+INSERT INTO `item_purchase` VALUES ('24', 'Frame Wooden 4R', '0');
+INSERT INTO `item_purchase` VALUES ('25', 'Frame Wooden 5R', '0');
+INSERT INTO `item_purchase` VALUES ('26', 'Frame Wooden 6R', '0');
+INSERT INTO `item_purchase` VALUES ('27', 'Frame Wooden 8R', '0');
+INSERT INTO `item_purchase` VALUES ('28', 'Frame Wooden 10R', '0');
+INSERT INTO `item_purchase` VALUES ('29', 'Frame Wooden 12R', '0');
+INSERT INTO `item_purchase` VALUES ('30', 'Frame Wooden 16R', '0');
+INSERT INTO `item_purchase` VALUES ('31', 'Frame Wooden 20R', '0');
+INSERT INTO `item_purchase` VALUES ('32', 'Frame Wooden 24R', '0');
+INSERT INTO `item_purchase` VALUES ('33', 'Frame Wooden 30R', '0');
+INSERT INTO `item_purchase` VALUES ('34', 'Frame Wooden A4', '0');
+INSERT INTO `item_purchase` VALUES ('35', 'Frame Wooden A3', '0');
+INSERT INTO `item_purchase` VALUES ('36', 'Frame Wooden A2', '0');
+INSERT INTO `item_purchase` VALUES ('37', 'Frame Wooden A1', '0');
+INSERT INTO `item_purchase` VALUES ('38', 'Frame Wooden A0', '0');
+INSERT INTO `item_purchase` VALUES ('39', 'Frame Plastic 3R', '0');
+INSERT INTO `item_purchase` VALUES ('40', 'Frame Plastic 4R', '0');
+INSERT INTO `item_purchase` VALUES ('41', 'Frame Plastic 5R', '0');
+INSERT INTO `item_purchase` VALUES ('42', 'Frame Plastic 6R', '0');
+INSERT INTO `item_purchase` VALUES ('43', 'Frame Plastic 8R', '0');
+INSERT INTO `item_purchase` VALUES ('44', 'Frame Plastic 10R', '0');
+INSERT INTO `item_purchase` VALUES ('45', 'Frame Plastic 12R', '0');
+INSERT INTO `item_purchase` VALUES ('46', 'Frame Plastic 16R', '0');
+INSERT INTO `item_purchase` VALUES ('47', 'Frame Plastic 20R', '0');
+INSERT INTO `item_purchase` VALUES ('48', 'Frame Plastic 24R', '0');
+INSERT INTO `item_purchase` VALUES ('49', 'Frame Plastic 30R', '0');
+INSERT INTO `item_purchase` VALUES ('50', 'Frame Plastic A4', '0');
+INSERT INTO `item_purchase` VALUES ('51', 'Frame Plastic A3', '0');
+INSERT INTO `item_purchase` VALUES ('52', 'Frame Plastic A2', '0');
+INSERT INTO `item_purchase` VALUES ('53', 'Frame Plastic A1', '0');
+INSERT INTO `item_purchase` VALUES ('54', 'Frame Plastic A0', '0');
 
 -- Table: loan by SHAHED TECH
 DROP TABLE IF EXISTS `loan`;
@@ -351,8 +405,9 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-17 05:07:24 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 05:15:10 PM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
