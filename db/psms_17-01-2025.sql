@@ -353,7 +353,9 @@ CREATE TABLE `supplier` (
   `Mobile` varchar(255) NOT NULL,
   `Address` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+INSERT INTO `supplier` VALUES ('1', 'Bashundhara Paper Mills', ' +88 02 55037257', 'Tower# 1, Plot# 844, Road# 12, Block# I, Bashundhara R/A, Dhaka-1229');
+INSERT INTO `supplier` VALUES ('2', 'Fresh Paper Mills', '+880-9666777055', ' Fresh Villa House # 15, Road # 34, Gulshan-1. Dhaka-1212, Bangladesh');
 
 -- Table: unit by SHAHED TECH
 DROP TABLE IF EXISTS `unit`;
@@ -380,7 +382,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-16 02:23:44 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 10:28:04 AM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-17 10:34:12 AM', 'ZERO');
@@ -394,6 +396,7 @@ INSERT INTO `user_activity` VALUES ('10', 'admin', '2025-01-17 11:37:32 AM', 'ZE
 INSERT INTO `user_activity` VALUES ('11', 'admin', '2025-01-17 11:39:10 AM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('12', 'admin', '2025-01-17 11:42:50 AM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('13', 'admin', '2025-01-17 11:50:19 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('14', 'admin', '2025-01-17 12:08:14 PM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
