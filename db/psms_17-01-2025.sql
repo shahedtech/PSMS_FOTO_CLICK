@@ -34,6 +34,11 @@ CREATE TABLE `ds_order` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 INSERT INTO `ds_order` VALUES ('0001', 'Foto click', 'Unknown', 'Unknown', 'Unknown', '0', 'Demo', '0', '0', '0', '2025-01-01', 'default');
 INSERT INTO `ds_order` VALUES ('2', 'admin', 'Shahed', '01626540168', 'Foto click pass', '2', 'DS PP 3 PIS', '200.000', '130', '', '2025-01-17', 'pending');
+INSERT INTO `ds_order` VALUES ('3', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '100', '', '2025-01-17', 'pending');
+INSERT INTO `ds_order` VALUES ('4', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '100', '', '2025-01-17', 'pending');
+INSERT INTO `ds_order` VALUES ('5', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '100', '', '2025-01-17', 'pending');
+INSERT INTO `ds_order` VALUES ('6', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '90', '', '2025-01-17', 'pending');
+INSERT INTO `ds_order` VALUES ('7', 'admin', 'Tamim', '01318523521', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '100', '', '2025-01-17', 'pending');
 
 -- Table: expense by SHAHED TECH
 DROP TABLE IF EXISTS `expense`;
@@ -272,9 +277,14 @@ CREATE TABLE `sales` (
   `Profit` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 INSERT INTO `sales` VALUES ('1', 'Foto Click', 'Unknown', 'Unknown', 'Unknown', '0', '0', '0', '2025-01-01');
 INSERT INTO `sales` VALUES ('2', 'admin', 'Shahed', '01626540168', 'Foto click pass', '130.00', '70', '180.00', '2025-01-17');
+INSERT INTO `sales` VALUES ('3', 'admin', 'Tamim', '01318523521', 'Foto click pass', '90.00', '10', '90.00', '2025-01-17');
+INSERT INTO `sales` VALUES ('4', 'admin', 'Tamim', '01318523521', 'Foto click pass', '90.00', '10', '90.00', '2025-01-17');
+INSERT INTO `sales` VALUES ('5', 'admin', 'Tamim', '01318523521', 'Foto click pass', '30.00', '70', '90.00', '2025-01-17');
+INSERT INTO `sales` VALUES ('6', 'admin', 'Tamim', '01318523521', 'Foto click pass', '90.00', '10', '90.00', '2025-01-17');
+INSERT INTO `sales` VALUES ('7', 'admin', 'Tamim', '01318523521', 'Foto click pass', '90.00', '10%', '90.00', '2025-01-17');
 
 -- Table: sales_profit by SHAHED TECH
 DROP TABLE IF EXISTS `sales_profit`;
@@ -287,8 +297,13 @@ CREATE TABLE `sales_profit` (
   `change` varchar(255) NOT NULL,
   `date` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 INSERT INTO `sales_profit` VALUES ('1', 'Shahed', '200.00', '130', '', '0.00', '2025-01-17');
+INSERT INTO `sales_profit` VALUES ('2', 'Tamim', '100.00', '100', '', '10.00', '2025-01-17');
+INSERT INTO `sales_profit` VALUES ('3', 'Tamim', '100.00', '100', '', '10.00', '2025-01-17');
+INSERT INTO `sales_profit` VALUES ('4', 'Tamim', '100.00', '100', '', '70.00', '2025-01-17');
+INSERT INTO `sales_profit` VALUES ('5', 'Tamim', '100.00', '90', '', '0.00', '2025-01-17');
+INSERT INTO `sales_profit` VALUES ('6', 'Tamim', '100.00', '100', '', '10.00', '2025-01-17');
 
 -- Table: salesadv by SHAHED TECH
 DROP TABLE IF EXISTS `salesadv`;
@@ -303,6 +318,11 @@ CREATE TABLE `salesadv` (
 INSERT INTO `salesadv` VALUES ('Shahed', '01626540168', 'DS PP', '0', '2', '2025-01-17');
 INSERT INTO `salesadv` VALUES ('Shahed', '01626540168', 'DS PP 3 PIS', '260', '2', '2025-01-17');
 INSERT INTO `salesadv` VALUES ('Shahed', '01626540168', 'DS PP 3 PIS', '200', '2', '2025-01-17');
+INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
+INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
+INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
+INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
+INSERT INTO `salesadv` VALUES ('Tamim', '01318523521', 'DS PP 3 PIS', '100', '1', '2025-01-17');
 
 -- Table: shared_files by SHAHED TECH
 DROP TABLE IF EXISTS `shared_files`;
@@ -360,7 +380,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-16 02:23:44 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 10:28:04 AM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-17 10:34:12 AM', 'ZERO');
@@ -371,6 +391,9 @@ INSERT INTO `user_activity` VALUES ('7', 'admin', '2025-01-17 11:02:51 AM', 'ZER
 INSERT INTO `user_activity` VALUES ('8', 'admin', '2025-01-17 11:05:47 AM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('9', 'admin', '2025-01-17 11:21:39 AM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('10', 'admin', '2025-01-17 11:37:32 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('11', 'admin', '2025-01-17 11:39:10 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('12', 'admin', '2025-01-17 11:42:50 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('13', 'admin', '2025-01-17 11:50:19 AM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
