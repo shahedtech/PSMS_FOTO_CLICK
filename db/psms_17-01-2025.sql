@@ -351,10 +351,11 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-16 02:23:44 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 10:28:04 AM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-17 10:34:12 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('4', 'admin', '2025-01-17 10:36:05 AM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
