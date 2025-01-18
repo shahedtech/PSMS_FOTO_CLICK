@@ -418,7 +418,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-17 05:07:24 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 05:15:10 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-18 10:06:49 AM', '');
@@ -447,6 +447,17 @@ INSERT INTO `user_activity` VALUES ('25', 'admin', '2025-01-18 01:41:22 PM', 'ZE
 INSERT INTO `user_activity` VALUES ('26', 'admin', '2025-01-18 01:44:58 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('27', 'admin', '2025-01-18 02:37:07 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('28', 'admin', '2025-01-18 02:40:41 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('29', 'admin', '2025-01-18 02:56:25 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('30', 'admin', '2025-01-18 03:00:15 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('31', 'admin', '2025-01-18 03:11:15 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('32', 'admin', '2025-01-18 03:19:17 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('33', 'admin', '2025-01-18 03:25:12 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('34', 'admin', '2025-01-18 03:29:28 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('35', 'admin', '2025-01-18 03:36:45 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('36', 'admin', '2025-01-18 03:42:36 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('37', 'admin', '2025-01-18 03:54:06 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('38', 'admin', '2025-01-18 04:01:58 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('39', 'admin', '2025-01-18 04:49:00 PM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
