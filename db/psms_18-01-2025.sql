@@ -10,8 +10,9 @@ CREATE TABLE `customer` (
   `Custome_image` longblob NOT NULL,
   `Pass` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 INSERT INTO `customer` VALUES ('1', 'Unknown', 'Unknown', 'Unknown', 'unknown@example.com', 'Unknown', 'System.Byte[]', 'Not active');
+INSERT INTO `customer` VALUES ('2', 'Shahed tech', 'Null', '01626540168', 'Null', 'Null', 'System.Byte[]', '6540132');
 
 -- Table: ds_order by SHAHED TECH
 DROP TABLE IF EXISTS `ds_order`;
@@ -30,6 +31,7 @@ CREATE TABLE `ds_order` (
   `Now` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 INSERT INTO `ds_order` VALUES ('0001', 'Foto click', 'Unknown', 'Unknown', 'Unknown', '0', 'Demo', '0', '0', '0', '2025-01-01', 'default');
+INSERT INTO `ds_order` VALUES ('2', 'admin', 'Shahed tech', '01626540168', 'Foto click pass', '1', 'DS PP 3 PIS', '100.000', '100', '', '2025-01-18', 'delivered');
 
 -- Table: expense by SHAHED TECH
 DROP TABLE IF EXISTS `expense`;
@@ -51,7 +53,7 @@ CREATE TABLE `fixexpense` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 INSERT INTO `fixexpense` VALUES ('1', 'Lab print ', '0');
-INSERT INTO `fixexpense` VALUES ('2', 'Savings', '0');
+INSERT INTO `fixexpense` VALUES ('2', 'Savings', '1000');
 INSERT INTO `fixexpense` VALUES ('3', 'Shamim', '0');
 INSERT INTO `fixexpense` VALUES ('4', 'Azeem', '0');
 INSERT INTO `fixexpense` VALUES ('5', 'Fayzul vai', '0');
@@ -74,7 +76,7 @@ CREATE TABLE `item` (
   `Barcode_image` longblob NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=latin1;
-INSERT INTO `item` VALUES ('1', 'DS PP', '0', '0', '202501', '0', '000000', 'System.Byte[]');
+INSERT INTO `item` VALUES ('1', 'DS PP 3 PIS', '100', '0', '202501', '10', '762647110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('2', 'DS ST', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('3', 'DS B2', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('4', 'DS A5', '0', '0', '202501', '0', '000000', 'System.Byte[]');
@@ -132,11 +134,11 @@ INSERT INTO `item` VALUES ('55', 'SF 20R', '0', '0', '202501', '0', '000000', 'S
 INSERT INTO `item` VALUES ('56', 'SF 20L', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('57', 'SF 30R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('58', 'Old Restore', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('59', 'Lamating Payoch', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('60', 'Online Work', '0', '0', '202501', '0', '000000', 'System.Byte[]');
+INSERT INTO `item` VALUES ('59', 'Lamating Payoch', '80', '0', '202501', '30', '154602110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('60', 'Online Work', '300', '0', '202501', '200', '827983110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('61', 'Ticket', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('62', 'Visa', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('63', 'Soft Copy', '0', '0', '202501', '0', '000000', 'System.Byte[]');
+INSERT INTO `item` VALUES ('63', 'Soft Copy', '50', '0', '202501', '20', '668839110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('64', 'Album Standard Photo', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('65', 'Album Leather Photo', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('66', 'Album Wedding Photo', '0', '0', '202501', '0', '000000', 'System.Byte[]');
@@ -162,11 +164,11 @@ INSERT INTO `item` VALUES ('85', 'Frame Wooden 16R', '0', '0', '202501', '0', '0
 INSERT INTO `item` VALUES ('86', 'Frame Wooden 20R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('87', 'Frame Wooden 24R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('88', 'Frame Wooden 30R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('89', 'Frame Wooden A4', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('90', 'Frame Wooden A3', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('91', 'Frame Wooden A2', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('92', 'Frame Wooden A1', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('93', 'Frame Wooden A0', '0', '0', '202501', '0', '000000', 'System.Byte[]');
+INSERT INTO `item` VALUES ('89', 'Frame Wooden A4', '550', '17', '202501', '50', '823443110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('90', 'Frame Wooden A3', '1200', '0', '202501', '200', '690253110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('91', 'Frame Wooden A2', '1570', '0', '202501', '70', '622752110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('92', 'Frame Wooden A1', '1720', '0', '202501', '220', '500855110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('93', 'Frame Wooden A0', '2299', '0', '202501', '299', '425061110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('94', 'Frame Plastic 3R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('95', 'Frame Plastic 4R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('96', 'Frame Plastic 5R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
@@ -178,11 +180,11 @@ INSERT INTO `item` VALUES ('101', 'Frame Plastic 16R', '0', '0', '202501', '0', 
 INSERT INTO `item` VALUES ('102', 'Frame Plastic 20R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('103', 'Frame Plastic 24R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
 INSERT INTO `item` VALUES ('104', 'Frame Plastic 30R', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('105', 'Frame Plastic A4', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('106', 'Frame Plastic A3', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('107', 'Frame Plastic A2', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('108', 'Frame Plastic A1', '0', '0', '202501', '0', '000000', 'System.Byte[]');
-INSERT INTO `item` VALUES ('109', 'Frame Plastic A0', '0', '0', '202501', '0', '000000', 'System.Byte[]');
+INSERT INTO `item` VALUES ('105', 'Frame Plastic A4', '550', '0', '202501', '50', '397464110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('106', 'Frame Plastic A3', '700', '0', '202501', '200', '535576110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('107', 'Frame Plastic A2', '1220', '0', '202501', '220', '831625110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('108', 'Frame Plastic A1', '1333', '0', '202501', '233', '483391110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('109', 'Frame Plastic A0', '1888', '0', '202501', '388', '455687110', 'System.Byte[]');
 
 -- Table: item_purchase by SHAHED TECH
 DROP TABLE IF EXISTS `item_purchase`;
@@ -225,7 +227,7 @@ INSERT INTO `item_purchase` VALUES ('30', 'Frame Wooden 16R', '0');
 INSERT INTO `item_purchase` VALUES ('31', 'Frame Wooden 20R', '0');
 INSERT INTO `item_purchase` VALUES ('32', 'Frame Wooden 24R', '0');
 INSERT INTO `item_purchase` VALUES ('33', 'Frame Wooden 30R', '0');
-INSERT INTO `item_purchase` VALUES ('34', 'Frame Wooden A4', '0');
+INSERT INTO `item_purchase` VALUES ('34', 'Frame Wooden A4', '500');
 INSERT INTO `item_purchase` VALUES ('35', 'Frame Wooden A3', '0');
 INSERT INTO `item_purchase` VALUES ('36', 'Frame Wooden A2', '0');
 INSERT INTO `item_purchase` VALUES ('37', 'Frame Wooden A1', '0');
@@ -262,7 +264,8 @@ CREATE TABLE `loan` (
   `Recent_pay` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+INSERT INTO `loan` VALUES ('1', 'admin', 'Shahed tech', '01626540168', 'Null', '6540132', '1100.00', '50', '100.00', '50', '2025-01-18');
 
 -- Table: mail by SHAHED TECH
 DROP TABLE IF EXISTS `mail`;
@@ -306,8 +309,9 @@ CREATE TABLE `purchase` (
   `Amt` varchar(255) NOT NULL,
   `date` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 INSERT INTO `purchase` VALUES ('1', 'Unknown', 'Unknown', 'Unknown', 'Demo Item', '0', '0', 'kg', '0', '2025-01-01');
+INSERT INTO `purchase` VALUES ('2', 'ABC Frame LIMITED', 'ABC/D Road A, D, BB ', '019898777821', 'Frame Wooden A4', '20', '500', 'PIS', '10000', '2025-01-18');
 
 -- Table: sales by SHAHED TECH
 DROP TABLE IF EXISTS `sales`;
@@ -322,8 +326,10 @@ CREATE TABLE `sales` (
   `Profit` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 INSERT INTO `sales` VALUES ('1', 'Foto Click', 'Unknown', 'Unknown', 'Unknown', '0', '0', '0', '2025-01-01');
+INSERT INTO `sales` VALUES ('2', 'admin', 'Unknown', 'Unknown', 'Foto click pass', '520.00', '30%', '50.00', '2025-01-18');
+INSERT INTO `sales` VALUES ('3', 'admin', 'Shahed tech', '01626540168', 'Foto click pass', '100.00', '0.0', '10.00', '2025-01-18');
 
 -- Table: sales_profit by SHAHED TECH
 DROP TABLE IF EXISTS `sales_profit`;
@@ -336,7 +342,10 @@ CREATE TABLE `sales_profit` (
   `change` varchar(255) NOT NULL,
   `date` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+INSERT INTO `sales_profit` VALUES ('1', 'Unknown', '550.00', '520', '', '0.00', '2025-01-18');
+INSERT INTO `sales_profit` VALUES ('2', 'Shahed tech', '100.00', '100', '', '0.00', '2025-01-18');
+INSERT INTO `sales_profit` VALUES ('3', 'Shahed tech', '1100.00', '1000', '100.00', '', '2025-01-18');
 
 -- Table: salesadv by SHAHED TECH
 DROP TABLE IF EXISTS `salesadv`;
@@ -348,6 +357,9 @@ CREATE TABLE `salesadv` (
   `Qty` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO `salesadv` VALUES ('Unknown', 'Unknown', 'Frame Wooden A4', '550', '1', '2025-01-18');
+INSERT INTO `salesadv` VALUES ('Shahed tech', '01626540168', 'DS PP 3 PIS', '100', '1', '2025-01-18');
+INSERT INTO `salesadv` VALUES ('Shahed tech', '01626540168', 'Frame Wooden A4', '1100', '2', '2025-01-18');
 
 -- Table: shared_files by SHAHED TECH
 DROP TABLE IF EXISTS `shared_files`;
@@ -378,7 +390,8 @@ CREATE TABLE `supplier` (
   `Mobile` varchar(255) NOT NULL,
   `Address` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+INSERT INTO `supplier` VALUES ('1', 'ABC Frame LIMITED', '019898777821', 'ABC/D Road A, D, BB ');
 
 -- Table: unit by SHAHED TECH
 DROP TABLE IF EXISTS `unit`;
@@ -405,13 +418,17 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-17 05:07:24 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 05:15:10 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-18 10:06:49 AM', '');
 INSERT INTO `user_activity` VALUES ('4', 'admin', '2025-01-18 10:10:50 AM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('5', 'admin', '2025-01-18 10:20:28 AM', '');
 INSERT INTO `user_activity` VALUES ('6', 'admin', '2025-01-18 10:24:07 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('7', 'admin', '2025-01-18 10:25:31 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('8', 'admin', '2025-01-18 10:39:14 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('9', 'admin', '2025-01-18 10:50:19 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('10', 'admin', '2025-01-18 11:05:15 AM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
