@@ -326,10 +326,40 @@ CREATE TABLE `sales` (
   `Profit` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
 INSERT INTO `sales` VALUES ('1', 'Foto Click', 'Unknown', 'Unknown', 'Unknown', '0', '0', '0', '2025-01-01');
 INSERT INTO `sales` VALUES ('2', 'admin', 'Unknown', 'Unknown', 'Foto click pass', '520.00', '30%', '50.00', '2025-01-18');
 INSERT INTO `sales` VALUES ('3', 'admin', 'Shahed tech', '01626540168', 'Foto click pass', '100.00', '0.0', '10.00', '2025-01-18');
+INSERT INTO `sales` VALUES ('4', 'foto click', 'unknown', 'unknown', 'unknown', '1098', '0', '98', '01-Jan-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('5', 'foto click', 'unknown', 'unknown', 'unknown', '234', '0', '134', '02-Jan-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('6', 'foto click', 'unknown', 'unknown', 'unknown', '23434', '0', '23334', '03-Feb-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('7', 'foto click', 'unknown', 'unknown', 'unknown', '4467', '0', '4367', '04-Mar-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('8', 'foto click', 'unknown', 'unknown', 'unknown', '5700', '0', '5600', '05-Apr-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('9', 'foto click', 'unknown', 'unknown', 'unknown', '7000', '0', '6900', '06-Apr-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('10', 'foto click', 'unknown', 'unknown', 'unknown', '4577', '0', '4477', '07-Apr-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('11', 'foto click', 'unknown', 'unknown', 'unknown', '4433', '0', '4333', '08-Apr-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('12', 'foto click', 'unknown', 'unknown', 'unknown', '6666', '0', '6566', '09-Apr-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('13', 'foto click', 'unknown', 'unknown', 'unknown', '1999', '0', '1899', '10-Apr-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('14', 'foto click', 'unknown', 'unknown', 'unknown', '9999', '0', '9899', '11-Jul-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('15', 'foto click', 'unknown', 'unknown', 'unknown', '24567', '0', '24467', '12-Jul-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('16', 'foto click', 'unknown', 'unknown', 'unknown', '46477', '0', '46377', '13-Jul-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('17', 'foto click', 'unknown', 'unknown', 'unknown', '5667', '0', '5567', '14-Sep-24 12:00:00 AM');
+INSERT INTO `sales` VALUES ('18', 'foto click', 'unknown', 'unknown', 'unknown', '34545', '0', '34445', '14-Oct-23 12:00:00 AM');
+INSERT INTO `sales` VALUES ('19', 'foto click', 'unknown', 'unknown', 'unknown', '6544', '0', '6444', '15-Nov-23 12:00:00 AM');
+INSERT INTO `sales` VALUES ('20', 'foto click', 'unknown', 'unknown', 'unknown', '56788', '0', '56688', '16-Jan-23 12:00:00 AM');
+INSERT INTO `sales` VALUES ('21', 'foto click', 'unknown', 'unknown', 'unknown', '457000', '0', '456900', '17-Jan-23 12:00:00 AM');
+INSERT INTO `sales` VALUES ('22', 'foto click', 'unknown', 'unknown', 'unknown', '5644', '0', '5544', '18-Jan-23 12:00:00 AM');
+INSERT INTO `sales` VALUES ('23', 'foto click', 'unknown', 'unknown', 'unknown', '9998', '0', '9898', '14-Jan-25 12:00:00 AM');
+INSERT INTO `sales` VALUES ('24', 'foto click', 'unknown', 'unknown', 'unknown', '1300', '0', '1200', '15-Jan-25 12:00:00 AM');
+INSERT INTO `sales` VALUES ('25', 'foto click', 'unknown', 'unknown', 'unknown', '67800', '0', '67700', '16-Jan-25 12:00:00 AM');
+INSERT INTO `sales` VALUES ('26', 'foto click', 'unknown', 'unknown', 'unknown', '3600', '0', '3500', '17-Jan-25 12:00:00 AM');
+INSERT INTO `sales` VALUES ('27', 'foto click', 'unknown', 'unknown', 'unknown', '3366', '0', '3266', '18-Jan-25 12:00:00 AM');
+INSERT INTO `sales` VALUES ('28', 'foto click', 'unknown', 'unknown', 'unknown', '3566', '0', '3466', '19-Jan-25 12:00:00 AM');
+INSERT INTO `sales` VALUES ('29', 'foto click', 'unknown', 'unknown', 'unknown', '24566', '0', '24466', '20-Jan-25 12:00:00 AM');
+INSERT INTO `sales` VALUES ('30', 'foto click', 'unknown', 'unknown', 'unknown', '33556', '0', '33456', '14-Dec-20 12:00:00 AM');
+INSERT INTO `sales` VALUES ('31', 'foto click', 'unknown', 'unknown', 'unknown', '56544', '0', '56444', '15-Dec-20 12:00:00 AM');
+INSERT INTO `sales` VALUES ('32', 'foto click', 'unknown', 'unknown', 'unknown', '45656', '0', '45556', '16-Dec-20 12:00:00 AM');
+INSERT INTO `sales` VALUES ('33', '', '', '', '', '', '', '', '17-Dec-20 12:00:00 AM');
 
 -- Table: sales_profit by SHAHED TECH
 DROP TABLE IF EXISTS `sales_profit`;
@@ -418,7 +448,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-17 05:07:24 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 05:15:10 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-18 10:06:49 AM', '');
@@ -467,6 +497,7 @@ INSERT INTO `user_activity` VALUES ('45', 'admin', '2025-01-18 11:21:18 PM', 'ZE
 INSERT INTO `user_activity` VALUES ('46', 'admin', '2025-01-20 03:25:30 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('47', 'admin', '2025-01-20 03:26:29 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('48', 'admin', '2025-01-20 03:42:54 PM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('49', 'admin', '2025-01-20 03:45:34 PM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
