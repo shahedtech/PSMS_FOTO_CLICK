@@ -76,7 +76,7 @@ CREATE TABLE `item` (
   `barcode` varchar(255) NOT NULL,
   `Barcode_image` longblob NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=112 DEFAULT CHARSET=latin1;
 INSERT INTO `item` VALUES ('1', 'DS PP 3 PIS', '100', '16', '202501', '10', '762647110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('2', 'DS ST', '0', '0', '202501', '0', '990533110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('3', 'DS B2', '0', '0', '202501', '0', '971927110', 'System.Byte[]');
@@ -187,6 +187,7 @@ INSERT INTO `item` VALUES ('107', 'Frame Plastic A2', '1220', '0', '202501', '22
 INSERT INTO `item` VALUES ('108', 'Frame Plastic A1', '550', '10', '2025091', '50', '483391110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('109', 'Frame Plastic A0', '1888', '0', '202501', '388', '455687110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('110', 'DS 12R', '0', '0', '', '0', '728248110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('111', 'DCVD', 'DV', '0', '', '', '746597111', 'System.Byte[]');
 
 -- Table: item_purchase by SHAHED TECH
 DROP TABLE IF EXISTS `item_purchase`;
@@ -487,7 +488,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-17 05:07:24 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 05:15:10 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-18 10:06:49 AM', '');
@@ -580,6 +581,7 @@ INSERT INTO `user_activity` VALUES ('89', 'admin', '2025/03/11 10:11:15 PM', 'DE
 INSERT INTO `user_activity` VALUES ('90', 'admin', '2025/03/13 01:28:22 PM', 'DESKTOP-7S0KTDT');
 INSERT INTO `user_activity` VALUES ('91', 'admin', '2025/03/13 01:35:51 PM', 'DESKTOP-7S0KTDT');
 INSERT INTO `user_activity` VALUES ('92', 'admin', '2025/03/13 01:42:49 PM', 'DESKTOP-7S0KTDT');
+INSERT INTO `user_activity` VALUES ('93', 'ADMIN', '2025/03/13 02:06:07 PM', 'DESKTOP-7S0KTDT');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
