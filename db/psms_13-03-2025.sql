@@ -70,7 +70,7 @@ CREATE TABLE `item` (
   `ID` int(255) NOT NULL AUTO_INCREMENT,
   `Item_name` varchar(255) NOT NULL,
   `Sale_price` varchar(255) NOT NULL,
-  `qty` varchar(255) NOT NULL,
+  `qty` int(255) NOT NULL,
   `Batch_no` varchar(255) NOT NULL,
   `Profit` varchar(255) NOT NULL,
   `barcode` varchar(255) NOT NULL,
@@ -186,7 +186,7 @@ INSERT INTO `item` VALUES ('106', 'Frame Plastic A3', '700', '0', '202501', '200
 INSERT INTO `item` VALUES ('107', 'Frame Plastic A2', '1220', '0', '202501', '220', '831625110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('108', 'Frame Plastic A1', '550', '10', '2025091', '50', '483391110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('109', 'Frame Plastic A0', '1888', '0', '202501', '388', '455687110', 'System.Byte[]');
-INSERT INTO `item` VALUES ('110', 'DS 12R', '0', '', '', '0', '728248110', 'System.Byte[]');
+INSERT INTO `item` VALUES ('110', 'DS 12R', '0', '0', '', '0', '728248110', 'System.Byte[]');
 
 -- Table: item_purchase by SHAHED TECH
 DROP TABLE IF EXISTS `item_purchase`;
@@ -487,7 +487,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-17 05:07:24 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 05:15:10 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-18 10:06:49 AM', '');
@@ -579,6 +579,7 @@ INSERT INTO `user_activity` VALUES ('88', 'admin', '2025-03-03 03:51:10 PM', 'ZE
 INSERT INTO `user_activity` VALUES ('89', 'admin', '2025/03/11 10:11:15 PM', 'DESKTOP-7S0KTDT');
 INSERT INTO `user_activity` VALUES ('90', 'admin', '2025/03/13 01:28:22 PM', 'DESKTOP-7S0KTDT');
 INSERT INTO `user_activity` VALUES ('91', 'admin', '2025/03/13 01:35:51 PM', 'DESKTOP-7S0KTDT');
+INSERT INTO `user_activity` VALUES ('92', 'admin', '2025/03/13 01:42:49 PM', 'DESKTOP-7S0KTDT');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
