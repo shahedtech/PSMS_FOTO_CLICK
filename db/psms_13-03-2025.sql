@@ -77,7 +77,7 @@ CREATE TABLE `item` (
   `Barcode_image` longblob NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=latin1;
-INSERT INTO `item` VALUES ('1', 'DEMO', '0', '16', '202501', '0', '867258113', 'System.Byte[]');
+INSERT INTO `item` VALUES ('1', 'DEMO', '0', '15', '202501', '0', '867258113', 'System.Byte[]');
 INSERT INTO `item` VALUES ('2', 'DS ST', '0', '0', '202501', '0', '990533110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('3', 'DS B2', '0', '0', '202501', '0', '971927110', 'System.Byte[]');
 INSERT INTO `item` VALUES ('4', 'DS A5', '0', '0', '202501', '0', '103977110', 'System.Byte[]');
@@ -357,7 +357,7 @@ CREATE TABLE `sales` (
   `Profit` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
 INSERT INTO `sales` VALUES ('1', 'Foto Click', 'Unknown', 'Unknown', 'Unknown', '0', '0', '0', '2025-01-01');
 INSERT INTO `sales` VALUES ('2', 'admin', 'Unknown', 'Unknown', 'Foto click pass', '520.00', '30%', '50.00', '2025-01-18');
 INSERT INTO `sales` VALUES ('3', 'admin', 'Shahed tech', '01626540168', 'Foto click pass', '100.00', '0.0', '10.00', '2025-01-18');
@@ -394,6 +394,7 @@ INSERT INTO `sales` VALUES ('33', '', '', '', '', '', '', '', '17-Dec-20 12:00:0
 INSERT INTO `sales` VALUES ('34', 'admin', 'Shahed tech', '01626540168', 'Foto click pass', '100.00', '0.0', '10.00', '2025-02-05');
 INSERT INTO `sales` VALUES ('35', 'admin', 'Unknown', 'Unknown', 'Foto click pass', '100.00', '0.0', '10.00', '2025-03-11');
 INSERT INTO `sales` VALUES ('36', 'admin', 'Shahed tech', '01626540168', 'Foto click pass', '100.00', '0.0', '10.00', '2025-03-11');
+INSERT INTO `sales` VALUES ('37', 'admin', 'Unknown', 'Unknown', 'Foto click pass', '0.00', '0.0%', '0.00', '2025-03-13');
 
 -- Table: sales_profit by SHAHED TECH
 DROP TABLE IF EXISTS `sales_profit`;
@@ -406,7 +407,7 @@ CREATE TABLE `sales_profit` (
   `change` varchar(255) NOT NULL,
   `date` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 INSERT INTO `sales_profit` VALUES ('1', 'Unknown', '550.00', '520', '', '0.00', '2025-01-18');
 INSERT INTO `sales_profit` VALUES ('2', 'Shahed tech', '100.00', '100', '', '0.00', '2025-01-18');
 INSERT INTO `sales_profit` VALUES ('3', 'Shahed tech', '1100.00', '1000', '100.00', '', '2025-01-18');
@@ -416,6 +417,7 @@ INSERT INTO `sales_profit` VALUES ('6', 'Unknown', '100.00', '67', '33.00', '', 
 INSERT INTO `sales_profit` VALUES ('7', 'Unknown', '100.00', '100', '', '0.00', '2025-03-11');
 INSERT INTO `sales_profit` VALUES ('8', 'Shahed tech', '100.00', '100', '', '0.00', '2025-03-11');
 INSERT INTO `sales_profit` VALUES ('9', 'Shahed tech', '17000.00', '10000', '5300.00', '', '2025-03-13');
+INSERT INTO `sales_profit` VALUES ('10', 'Unknown', '0.00', '0', '', '0.00', '2025-03-13');
 
 -- Table: salesadv by SHAHED TECH
 DROP TABLE IF EXISTS `salesadv`;
@@ -436,6 +438,7 @@ INSERT INTO `salesadv` VALUES ('Unknown', 'Unknown', 'DS PP 3 PIS', '100', '1', 
 INSERT INTO `salesadv` VALUES ('Unknown', 'Unknown', 'DS PP 3 PIS', '100', '1', '2025-03-11');
 INSERT INTO `salesadv` VALUES ('Shahed tech', '01626540168', 'DS PP 3 PIS', '100', '1', '2025-03-11');
 INSERT INTO `salesadv` VALUES ('Shahed tech', '01626540168', 'OPPO A3', '17000', '1', '2025-03-13');
+INSERT INTO `salesadv` VALUES ('Unknown', 'Unknown', 'DEMO', '0', '1', '2025-03-13');
 
 -- Table: shared_files by SHAHED TECH
 DROP TABLE IF EXISTS `shared_files`;
@@ -494,7 +497,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=96 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=97 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-17 05:07:24 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 05:15:10 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-18 10:06:49 AM', '');
@@ -590,6 +593,7 @@ INSERT INTO `user_activity` VALUES ('92', 'admin', '2025/03/13 01:42:49 PM', 'DE
 INSERT INTO `user_activity` VALUES ('93', 'ADMIN', '2025/03/13 02:06:07 PM', 'DESKTOP-7S0KTDT');
 INSERT INTO `user_activity` VALUES ('94', 'admin', '2025/03/13 02:24:27 PM', 'DESKTOP-7S0KTDT');
 INSERT INTO `user_activity` VALUES ('95', 'admin', '2025/03/13 02:36:09 PM', 'DESKTOP-7S0KTDT');
+INSERT INTO `user_activity` VALUES ('96', 'admin', '2025/03/13 02:42:39 PM', 'DESKTOP-7S0KTDT');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
