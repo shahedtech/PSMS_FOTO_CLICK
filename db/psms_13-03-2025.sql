@@ -273,7 +273,6 @@ CREATE TABLE `loan` (
 INSERT INTO `loan` VALUES ('1', 'admin', 'Shahed tech', '01626540168', 'Null', '6540132', '1100.00', '50', '100.00', '50', '2025-01-18');
 INSERT INTO `loan` VALUES ('2', 'admin', 'Shahed tech', '01626540168', 'Null', 'Foto click pass', '90.00', '10.00', '10.00', '0', '2025-02-09');
 INSERT INTO `loan` VALUES ('3', 'admin', 'Unknown', 'Unknown', 'unknown@example.com', 'Foto click pass', '100.00', '33.00', '10.00', '0', '2025-03-03');
-INSERT INTO `loan` VALUES ('4', 'admin', 'Shahed tech', '01626540168', 'Null', 'Foto click pass', '15300.00', '5300.00', '4000.00', '0', '2025-03-13');
 
 -- Table: mail by SHAHED TECH
 DROP TABLE IF EXISTS `mail`;
@@ -357,7 +356,7 @@ CREATE TABLE `sales` (
   `Profit` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
 INSERT INTO `sales` VALUES ('1', 'Foto Click', 'Unknown', 'Unknown', 'Unknown', '0', '0', '0', '2025-01-01');
 INSERT INTO `sales` VALUES ('2', 'admin', 'Unknown', 'Unknown', 'Foto click pass', '520.00', '30%', '50.00', '2025-01-18');
 INSERT INTO `sales` VALUES ('3', 'admin', 'Shahed tech', '01626540168', 'Foto click pass', '100.00', '0.0', '10.00', '2025-01-18');
@@ -395,6 +394,7 @@ INSERT INTO `sales` VALUES ('34', 'admin', 'Shahed tech', '01626540168', 'Foto c
 INSERT INTO `sales` VALUES ('35', 'admin', 'Unknown', 'Unknown', 'Foto click pass', '100.00', '0.0', '10.00', '2025-03-11');
 INSERT INTO `sales` VALUES ('36', 'admin', 'Shahed tech', '01626540168', 'Foto click pass', '100.00', '0.0', '10.00', '2025-03-11');
 INSERT INTO `sales` VALUES ('37', 'admin', 'Unknown', 'Unknown', 'Foto click pass', '0.00', '0.0%', '0.00', '2025-03-13');
+INSERT INTO `sales` VALUES ('38', 'admin', 'Shahed tech', '01626540168', 'Foto click pass', '15300.00', '', '3700', '2025-03-13');
 
 -- Table: sales_profit by SHAHED TECH
 DROP TABLE IF EXISTS `sales_profit`;
@@ -497,7 +497,7 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025-01-17 05:07:24 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025-01-17 05:15:10 PM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('3', 'admin', '2025-01-18 10:06:49 AM', '');
@@ -595,6 +595,10 @@ INSERT INTO `user_activity` VALUES ('94', 'admin', '2025/03/13 02:24:27 PM', 'DE
 INSERT INTO `user_activity` VALUES ('95', 'admin', '2025/03/13 02:36:09 PM', 'DESKTOP-7S0KTDT');
 INSERT INTO `user_activity` VALUES ('96', 'admin', '2025/03/13 02:42:39 PM', 'DESKTOP-7S0KTDT');
 INSERT INTO `user_activity` VALUES ('97', 'admin', '2025/03/13 02:50:27 PM', 'DESKTOP-7S0KTDT');
+INSERT INTO `user_activity` VALUES ('98', 'admin', '2025/03/13 03:25:37 PM', 'DESKTOP-7S0KTDT');
+INSERT INTO `user_activity` VALUES ('99', 'admin', '2025/03/13 03:28:11 PM', 'DESKTOP-7S0KTDT');
+INSERT INTO `user_activity` VALUES ('100', 'admin', '2025/03/13 03:30:14 PM', 'DESKTOP-7S0KTDT');
+INSERT INTO `user_activity` VALUES ('101', 'admin', '2025/03/13 03:52:34 PM', 'DESKTOP-7S0KTDT');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
