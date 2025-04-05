@@ -160,8 +160,10 @@ CREATE TABLE `sales` (
   `Profit` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 INSERT INTO `sales` VALUES ('1', 'Foto Click', 'Unknown', 'Unknown', 'Unknown', '0', '0', '0', '2025-01-01');
+INSERT INTO `sales` VALUES ('2', 'ewr', 'df', 'df', 'df', '100000', '0', '21232', '2024-01-01');
+INSERT INTO `sales` VALUES ('3', 'dsffd', 'dcd', 'c', 'dsff', '124500', '5', '4353443', '2025-01-01');
 
 -- Table: sales_profit by SHAHED TECH
 DROP TABLE IF EXISTS `sales_profit`;
@@ -243,9 +245,11 @@ CREATE TABLE `user_activity` (
   `timestemp` varchar(255) NOT NULL,
   `Computer_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 INSERT INTO `user_activity` VALUES ('1', 'admin', '2025/04/05 10:34:27 AM', 'ZERO');
 INSERT INTO `user_activity` VALUES ('2', 'admin', '2025/04/05 10:40:43 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('3', 'admin', '2025/04/05 11:33:28 AM', 'ZERO');
+INSERT INTO `user_activity` VALUES ('4', 'admin', '2025/04/05 11:35:52 AM', 'ZERO');
 
 -- Table: users by SHAHED TECH
 DROP TABLE IF EXISTS `users`;
